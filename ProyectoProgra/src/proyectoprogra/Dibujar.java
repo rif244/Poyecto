@@ -56,23 +56,23 @@ public class Dibujar extends JPanel implements MouseListener {
                 String [] atomoaux = Guardado.box();                
                 getListaAtomos().add(new Atomo(e.getX() - 30, e.getY() - 30, atomoaux[atomo]));
                 if(enlaces==1){
-                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 15));
+                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 10));
                 }
                 else if (enlaces==2){
-                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 15));
-                    getListaEnlaces().add(new Enlaces(e.getX() - 15, e.getY() + 35));
+                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 10));
+                    getListaEnlaces().add(new Enlaces(e.getX() - 10, e.getY() + 35));
                 }
                 else if (enlaces == 3){
-                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 15));
-                    getListaEnlaces().add(new Enlaces(e.getX() - 15, e.getY() + 35));
-                    getListaEnlaces().add(new Enlaces(e.getX() - 15, e.getY() - 65));               
+                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 10));
+                    getListaEnlaces().add(new Enlaces(e.getX() - 10, e.getY() + 35));
+                    getListaEnlaces().add(new Enlaces(e.getX() - 10, e.getY() - 55));               
                 }
                 else if (enlaces == 4){
                 
-                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 15));
-                    getListaEnlaces().add(new Enlaces(e.getX() - 15, e.getY() + 35));
-                    getListaEnlaces().add(new Enlaces(e.getX() - 15, e.getY() - 65)); 
-                    getListaEnlaces().add(new Enlaces(e.getX() - 65, e.getY() - 15));
+                    getListaEnlaces().add(new Enlaces(e.getX() + 35, e.getY() - 10));
+                    getListaEnlaces().add(new Enlaces(e.getX() - 10, e.getY() + 35));
+                    getListaEnlaces().add(new Enlaces(e.getX() - 10, e.getY() - 55)); 
+                    getListaEnlaces().add(new Enlaces(e.getX() - 55, e.getY() - 10));
                 }             
                 repaint();
                 

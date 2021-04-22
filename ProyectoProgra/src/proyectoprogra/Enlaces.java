@@ -7,7 +7,8 @@ import static proyectoprogra.Guardado.Lista;
 
 public class Enlaces {
    private int x=0, y=0;
-   static final int d = 30;
+   static final int d = 20;
+   boolean usado=false;//se sua pa ver si esta conectado a tro enlace
 
     public Enlaces(int x, int y) {
         setX(x);
