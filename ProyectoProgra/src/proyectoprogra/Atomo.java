@@ -1,23 +1,50 @@
 
 package proyectoprogra;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.util.ArrayList;
+
+
 public class Atomo {
-    private int Enlaces;
     private String Nombre;
+    private int x=0, y=0;
+    static final int d = 60;
     
 
-    public Atomo(String Nombre){
-        this.Nombre=Nombre;
+    public Atomo(int x, int y, String nombre){
+        this.Nombre=nombre;
+        setX(x);
+        setY(y);
+    }
+    
+    public Atomo(){   
     }
 
-
-    public int getEnlaces(){
-        return Enlaces;
+    public void pintar (Graphics g){
+        g.setColor(Color.white);
+        g.drawOval(getX(), getY(), d, d); 
+        g.drawString(this.Nombre, getX()+10, getY()+35);
+    }
+    
+    
+    
+    public int getX() {
+        return x;
     }
 
-    public void setElacesS(int Enlaces){
-        this.Enlaces=Enlaces;
+    public void setX(int x) {
+        this.x = x;
     }
 
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+    
     public String getNombre(){
         return Nombre;
     }
@@ -27,9 +54,12 @@ public class Atomo {
     }
 
 
+    
 
 
-
-    //se necesita la función para dibujar los átomos
+  
+    
+    
+    
 }
 

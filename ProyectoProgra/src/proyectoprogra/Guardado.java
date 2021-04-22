@@ -3,13 +3,8 @@ package proyectoprogra;
 import java.util.ArrayList;
 public class Guardado {
     public static ArrayList<Atomo> Lista = new ArrayList();
-
-    static void Imprimir(){
-        for(int i=0;i<Lista.size();i++){
-            System.out.println("Atomo "+(i+1)+": ");
-            System.out.println("Nombre: "+Lista.get(i).getNombre()+"\nN de enlaces: "+Lista.get(i).getEnlaces());
-        }
-    }
+    
+   
 
     static ArrayList Eliminar(int i){
         i=i-1;

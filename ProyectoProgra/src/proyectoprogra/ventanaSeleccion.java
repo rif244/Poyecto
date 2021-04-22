@@ -30,7 +30,8 @@ public class ventanaSeleccion extends VentanaGeneral {
             public void actionPerformed(ActionEvent ae) {
                 String entrada;
                 entrada = JOptionPane.showInputDialog(null,"Ingrese el nombre de el atomo", "Moleculator", JOptionPane.PLAIN_MESSAGE);
-                Atomo atomoaux = new Atomo(entrada);
+                Atomo atomoaux = new Atomo();
+                atomoaux.setNombre(entrada);
                 Guardado.Lista.add(atomoaux);
                 JOptionPane.showMessageDialog(null,"El atomo se ha ingresado correctamente", "Moleculator", JOptionPane.PLAIN_MESSAGE);
             }

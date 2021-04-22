@@ -21,7 +21,7 @@ public class VentanaGeneral extends JFrame {
         this.setTitle("Moleculator");//titulo de la ventana
         this.setLocation(500,100);//se inicializa la ventana en el centro de la pantalla
         this.setLayout(null);
-        this.getContentPane().setBackground(Color.white);
+        this.getContentPane().setBackground(Color.black);
         this.crearPanel();
     }
 
